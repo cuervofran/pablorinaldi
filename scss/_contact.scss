@@ -7,20 +7,28 @@
 
 }
 
+
+.color-red {
+    color: #D9281B;
+}
+
 .contact-info{
-    padding-top: 30vh;
+    padding-top: 33vh;
     font-size: 1.5rem;
     display: flex;
     align-items: left;
     justify-content: center;
     flex-direction: column;
     padding-left: 20%;
+    
         p {
             font-weight:400;
             padding-bottom: 10px;
         }
+
+        .vte-lopez{
+            padding-top: 10%;
+        }
 }
 
-.vte-lopez{
-    padding-top: 10%;
-}
+

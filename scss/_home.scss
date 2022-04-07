@@ -5,24 +5,24 @@
 }
 
 .img {
-    min-width: 50%;
+    min-width: 45%;
         .imagen-principal {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit:cover;
         }
 }
 
 .texto-bienvenida {
-    min-width: 50%;
+    max-width: 55%;
     display: flex;
     align-items: center;
     justify-content: left;
 
     .text {
         background: rgb(221, 216, 216);
-        height: 520px;
-        width: 550px;
+        height: 500px;
+        width: 80%;
     
         h1 {
             padding: 3rem 4rem 1rem 2rem;

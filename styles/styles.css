@@ -24,6 +24,16 @@
   box-sizing: border-box;
   font-family: "Circular Std Book"; }
 
+.logo-responsive {
+  display: none; }
+
+/* .logo-white{
+    display: none;
+}
+
+.logo-black{
+    display: none;
+} */
 .header {
   padding: 1rem;
   background: transparent;
@@ -38,29 +48,52 @@
     align-items: center; }
     .header .nav-bar ul li {
       list-style-type: none; }
-      .header .nav-bar ul li .logo-white {
-        color: white; }
+      .header .nav-bar ul li #logo-white {
+        color: #ffffff; }
+      .header .nav-bar ul li #logo-white::after {
+        background: #ffffff; }
       .header .nav-bar ul li a {
         color: black;
         font-size: 1.4rem;
         text-decoration: none;
         display: block;
-        border-bottom: 5px solid black;
         margin: 1rem;
         font-weight: 600;
         padding-bottom: 1em;
         cursor: pointer; }
+  .header .color-red {
+    color: #D9281B; }
+
+.nav-item {
+  color: #101010;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: clip-path .5s; }
+
+.nav-item::after {
+  content: "";
+  display: block;
+  background: #101010;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .5s; }
+
+.nav-item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 
 .header-portfolio {
   background-color: #e4e4e4;
   position: relative;
+  height: 100px;
   top: 0;
   left: 0; }
 
-.marketing {
-  color: black;
-  border-bottom: 5px solid black; }
-
+/* .marketing  {
+    color:black;
+    border-bottom:5px solid black ;
+}  */
 .footer {
   padding: 1rem;
   background: transparent;
@@ -87,14 +120,17 @@
       line-height: 0.8em; }
     .footer .footer-container .social-links {
       display: flex;
-      justify-content: center;
-      flex-direction: column; }
+      justify-content: end;
+      flex-direction: column;
+      text-align: right; }
       .footer .footer-container .social-links a {
         color: black;
         font-size: 1.1rem;
         text-decoration: none;
         font-weight: 600;
         cursor: pointer; }
+    .footer .footer-container .white-style {
+      color: white !important; }
 
 .footer-contact {
   bottom: 0vh; }
@@ -104,21 +140,21 @@
   height: 100vh; }
 
 .img {
-  min-width: 50%; }
+  min-width: 45%; }
   .img .imagen-principal {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover; }
 
 .texto-bienvenida {
-  min-width: 50%;
+  max-width: 55%;
   display: flex;
   align-items: center;
   justify-content: left; }
   .texto-bienvenida .text {
     background: #ddd8d8;
-    height: 520px;
-    width: 550px; }
+    height: 500px;
+    width: 80%; }
     .texto-bienvenida .text h1 {
       padding: 3rem 4rem 1rem 2rem;
       font-size: 3.2rem;
@@ -156,11 +192,11 @@
 
 .item2 {
   width: 230px;
-  height: 180px; }
+  height: 160px; }
 
 .item3 {
   width: 230px;
-  height: 200px; }
+  height: 180px; }
 
 .item4 {
   width: 230px;
@@ -172,7 +208,7 @@
 
 .item6 {
   width: 230px;
-  height: 250px; }
+  height: 160px; }
 
 .item7 {
   width: 230px;
@@ -208,7 +244,7 @@
 
 .item15 {
   width: 230px;
-  height: 280px; }
+  height: 300px; }
 
 .item16 {
   width: 230px;
@@ -220,7 +256,7 @@
 
 .item18 {
   width: 230px;
-  height: 240px; }
+  height: 160px; }
 
 .item19 {
   width: 230px;
@@ -228,19 +264,19 @@
 
 .item20 {
   width: 230px;
-  height: 180px; }
+  height: 160px; }
 
 .item21 {
   width: 230px;
-  height: 320px; }
+  height: 340px; }
 
 .item22 {
   width: 230px;
-  height: 200px; }
+  height: 180px; }
 
 .item23 {
   width: 230px;
-  height: 280px; }
+  height: 300px; }
 
 .item24 {
   width: 230px;
@@ -248,7 +284,7 @@
 
 .item25 {
   width: 230px;
-  height: 200px; }
+  height: 160px; }
 
 .item26 {
   width: 230px;
@@ -268,7 +304,7 @@
 
 .item30 {
   width: 230px;
-  height: 260px; }
+  height: 300px; }
 
 .item31 {
   width: 230px;
@@ -280,7 +316,7 @@
 
 .item33 {
   width: 230px;
-  height: 300px; }
+  height: 320px; }
 
 .item34 {
   width: 230px;
@@ -300,11 +336,11 @@
 
 .item38 {
   width: 230px;
-  height: 180px; }
+  height: 160px; }
 
 .item39 {
   width: 230px;
-  height: 300px; }
+  height: 310px; }
 
 .item40 {
   width: 230px;
@@ -320,7 +356,7 @@
 
 .item43 {
   width: 230px;
-  height: 180px; }
+  height: 160px; }
 
 #contact {
   background-image: url(../images/img-contact.png);
@@ -329,8 +365,11 @@
   background-size: cover;
   background-position: center; }
 
+.color-red {
+  color: #D9281B; }
+
 .contact-info {
-  padding-top: 30vh;
+  padding-top: 33vh;
   font-size: 1.5rem;
   display: flex;
   align-items: left;
@@ -340,6 +379,171 @@
   .contact-info p {
     font-weight: 400;
     padding-bottom: 10px; }
+  .contact-info .vte-lopez {
+    padding-top: 10%; }
 
-.vte-lopez {
-  padding-top: 10%; }
+@media screen and (max-width: 1350px) {
+  .texto-bienvenida {
+    width: 100%;
+    /* display: flex;
+        align-items: center;
+        justify-content: left; */ }
+    .texto-bienvenida .text {
+      width: 90%;
+      height: 72%; }
+      .texto-bienvenida .text h1 {
+        padding: 2rem 4rem 0rem 2rem;
+        font-size: 3rem;
+        color: black;
+        line-height: 0.8em; }
+      .texto-bienvenida .text p {
+        line-height: 1.2em;
+        font-size: 1rem;
+        color: black;
+        padding: 1.5rem 2rem 0rem 2rem; }
+      .texto-bienvenida .text .como-mkt {
+        font-size: 1.6rem; } }
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 0.5rem; }
+  .home {
+    height: 90%; }
+  .responsive-style::after {
+    background: white; }
+  .logo {
+    display: none; }
+  .logo-responsive {
+    display: block; }
+  .logo-white {
+    width: 60px;
+    height: 60px; }
+  .logo-black {
+    display: block;
+    width: 60px;
+    height: 60px; }
+  .bg-color {
+    background-color: #ddd8d8; }
+  .home {
+    display: flex;
+    flex-direction: column; }
+  .img {
+    min-width: 45%; }
+    .img .imagen-principal {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover; }
+  .white-style {
+    color: white !important; }
+  .responsive-style {
+    color: white !important; }
+  .texto-bienvenida {
+    max-width: 90vw;
+    height: 700px; }
+    .texto-bienvenida .text {
+      margin: 0; }
+      .texto-bienvenida .text h1 {
+        padding: 1rem 2rem;
+        font-size: 3rem;
+        color: black;
+        line-height: 0.8em; }
+      .texto-bienvenida .text .como-mkt {
+        font-size: 1.8rem; }
+      .texto-bienvenida .text p {
+        line-height: 1.3em;
+        font-size: 1rem;
+        color: black;
+        padding: 0rem 2rem 2rem 2rem; }
+  #contact {
+    background-image: url(../images/img-contact-responsive.png); }
+    #contact .contact-info {
+      padding-top: 30vh;
+      padding-left: 10%; } }
+
+@media screen and (max-width: 550px) {
+  .logo-responsive {
+    display: block; }
+  .logo-responsive img {
+    display: block;
+    width: 60px;
+    height: 60px; }
+  .logo {
+    display: none; }
+  .header {
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+    .header .home-links li a {
+      color: #ffffff;
+      font-size: 1.4rem;
+      text-decoration: none;
+      display: block;
+      margin: 1rem;
+      font-weight: 600;
+      padding-bottom: 1em;
+      cursor: pointer; }
+  .white-style {
+    color: white !important; }
+  .gallery {
+    padding-top: 120px; }
+  .img {
+    width: 100%; }
+  .texto-bienvenida {
+    max-width: 100%; }
+    .texto-bienvenida .text {
+      background: #ddd8d8;
+      height: 90%;
+      width: 100%; }
+      .texto-bienvenida .text h1 {
+        padding: 2rem;
+        font-size: 3rem;
+        color: black;
+        line-height: 0.8em; }
+      .texto-bienvenida .text p {
+        line-height: 1.3em;
+        font-size: 1rem;
+        color: black;
+        padding: 0rem 2rem 6rem 2rem; }
+      .texto-bienvenida .text .como-mkt {
+        font-size: 1.8rem; }
+  #contact .contact-info {
+    font-size: 1.5rem; }
+  .footer {
+    padding: 1rem 0.5rem; }
+    .footer .footer-container .year-black p {
+      font-size: 3rem;
+      padding: 0; }
+    .footer .footer-container .year p {
+      font-size: 3rem;
+      padding: 0; }
+    .footer .footer-container .social-links {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      text-align: right; }
+      .footer .footer-container .social-links a {
+        padding: 0;
+        font-size: 1.1rem; } }
+
+@media screen and (max-width: 350px) {
+  .texto-bienvenida {
+    max-width: 100%; }
+    .texto-bienvenida .text {
+      background: #ddd8d8;
+      height: 100%;
+      width: 100%; }
+      .texto-bienvenida .text h1 {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+        color: black;
+        line-height: 0.8em; }
+      .texto-bienvenida .text p {
+        line-height: 1.3em;
+        font-size: 1rem;
+        color: black;
+        padding: 0rem 2rem; }
+      .texto-bienvenida .text .como-mkt {
+        font-size: 1.8rem; } }

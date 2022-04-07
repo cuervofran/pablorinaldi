@@ -29,11 +29,12 @@
             padding: 0 0 0 1rem;
             line-height: 0.8em;
         }
-
+        
         .social-links {
             display: flex;
-            justify-content: center;
+            justify-content: end;
             flex-direction: column;
+            text-align: right;
 
                 a {
                     color: black;
@@ -43,10 +44,14 @@
                     cursor: pointer;
                 }
             }
-   
+
+            .white-style {
+                color:white !important;
+            }
+        
     } 
 }
-    
+
 .footer-contact {
     bottom: 0vh; 
 }

@@ -1,3 +1,16 @@
+.logo-responsive {
+    display: none;
+}
+
+
+/* .logo-white{
+    display: none;
+}
+
+.logo-black{
+    display: none;
+} */
+
 .header {
     padding:1rem;
     background: transparent;
@@ -6,7 +19,7 @@
     left: 0;
     width: 100%;
     z-index:1;
-    // box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5)
 
         .nav-bar ul {
             display: flex;
@@ -16,8 +29,12 @@
                 li{
                     list-style-type: none;
 
-                        .logo-white {
-                            color: white;
+                        #logo-white {
+                            color: #ffffff;
+                        }
+
+                        #logo-white::after {
+                            background: #ffffff;
                         }
 
                         a {
@@ -25,7 +42,7 @@
                             font-size: 1.4rem;
                             text-decoration: none;
                             display: block;
-                            border-bottom:5px solid black ;
+                            // border-bottom:5px solid black ;
                             margin: 1rem;
                             font-weight: 600;
                             padding-bottom: 1em;
@@ -33,17 +50,44 @@
                         }
                     }
         }
+
+        .color-red {
+            color: #D9281B;
+        }
+}
+
+.nav-item {
+    color: #101010;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transition:clip-path .5s;
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    background: #101010;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition:clip-path .5s;
+}
+
+.nav-item:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .header-portfolio {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(228, 228, 228);;
     position:relative;
+    height: 100px;
     top: 0;
     left: 0;
 }
 
 
-.marketing  {
+/* .marketing  {
     color:black;
     border-bottom:5px solid black ;
-} 
+}  */
