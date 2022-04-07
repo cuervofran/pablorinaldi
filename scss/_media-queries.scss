@@ -227,7 +227,7 @@
     #contact {
         .contact-info{
             font-size: 1.5rem;
-            padding-top: 38vh;
+            padding-top: 32vh;
         }
     }
 
@@ -239,15 +239,16 @@
            .year-black p {
                 font-size: 3rem;
                 padding: 0;
-            
            }
     
             .year p {
                 font-size: 3rem;
                 padding: 0;
             }
+
+            
     
-            .social-links {
+            /* .social-links {
                 display: flex;
                 justify-content: end;
                 flex-direction: column;
@@ -258,7 +259,7 @@
                         font-size: 1.1rem;
                         
                     }
-                }
+                } */
         } 
     }
 }
