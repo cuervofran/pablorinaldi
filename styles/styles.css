@@ -78,12 +78,19 @@
 
 .header-portfolio {
   background-color: #e4e4e4;
-  position: relative; }
+  position: relative;
+  height: 80px; }
 
+/* .home {
+    // background-color: rgb(228, 228, 228);;
+    // position:relative;
+    // background: transparent !important;
+} */
 /* .marketing  {
     color:black;
     border-bottom:5px solid black ;
-}  */
+    }
+*/
 .footer {
   padding: 1rem;
   background: transparent;
@@ -396,7 +403,12 @@
 
 @media screen and (max-width: 800px) {
   .header {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    width: 100vw; }
+  nav-item a {
+    margin: 0; }
+  .header-portfolio {
+    height: 90px; }
   .home {
     height: 90%; }
   .responsive-style::after {
@@ -460,12 +472,15 @@
   .logo {
     display: none; }
   .header {
+    position: absolute;
     padding: 0.5rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; }
+    height: 100px;
+    /* position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index:1;
+     */ }
     .header .home-links li a {
       color: #ffffff;
       font-size: 1.4rem;
@@ -478,7 +493,7 @@
   .white-style {
     color: white !important; }
   .gallery {
-    padding-top: 120px; }
+    padding-top: 110px; }
   .img {
     width: 100%; }
   .texto-bienvenida {
@@ -500,9 +515,10 @@
       .texto-bienvenida .text .como-mkt {
         font-size: 1.8rem; }
   #contact .contact-info {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding-top: 38vh; }
   .footer {
-    padding: 1rem 0.5rem; }
+    padding: 1rem; }
     .footer .footer-container .year-black p {
       font-size: 3rem;
       padding: 0; }
