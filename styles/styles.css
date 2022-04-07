@@ -27,13 +27,6 @@
 .logo-responsive {
   display: none; }
 
-/* .logo-white{
-    display: none;
-}
-
-.logo-black{
-    display: none;
-} */
 .header {
   padding: 1rem;
   background: transparent;
@@ -85,10 +78,7 @@
 
 .header-portfolio {
   background-color: #e4e4e4;
-  position: relative;
-  height: 100px;
-  top: 0;
-  left: 0; }
+  position: relative; }
 
 /* .marketing  {
     color:black;
@@ -423,7 +413,7 @@
     width: 60px;
     height: 60px; }
   .bg-color {
-    background-color: #ddd8d8; }
+    background: #ddd8d8; }
   .home {
     display: flex;
     flex-direction: column; }

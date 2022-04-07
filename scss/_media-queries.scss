@@ -37,6 +37,8 @@
 
     .header {
         padding:0.5rem;
+        // position: relative;
+        // background: transparent;
     }
 
     .home{
@@ -67,7 +69,7 @@
         }
     
         .bg-color {
-            background-color: rgb(221, 216, 216);
+            background:rgb(221, 216, 216);;
         }
 
         .home {
