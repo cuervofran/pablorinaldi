@@ -103,12 +103,14 @@
     display: flex;
     justify-content: right; }
     .footer .footer-container .year-black p {
+      display: none;
       color: black;
       font-size: 4rem;
       font-weight: bolder;
       padding: 0 0 0 1rem;
       line-height: 0.8em; }
     .footer .footer-container .year p {
+      display: none;
       font-size: 4rem;
       color: white;
       font-weight: bolder;
