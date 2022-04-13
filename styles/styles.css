@@ -101,7 +101,6 @@
   z-index: 1; }
   .footer .footer-container {
     display: flex;
-    flex-direction: row;
     justify-content: right; }
     .footer .footer-container .year-black p {
       color: black;
