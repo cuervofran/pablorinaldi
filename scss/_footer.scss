@@ -12,7 +12,8 @@
    .footer-container {
        display: flex;
        flex-direction: row;
-       justify-content: space-between;
+       justify-content: right;
+    
 
        .year-black p {
             color:black;
@@ -32,9 +33,10 @@
         
         .social-links {
             display: flex;
-            justify-content: end !important;
+            // justify-content:right;
             flex-direction: column;
-            text-align: right;
+            // text-align: right;
+            // padding: 0 5px 0 0;
 
                 a {
                     color: black;
@@ -43,11 +45,17 @@
                     font-weight: 600;
                     cursor: pointer;
                 }
-            }
 
-            .white-style {
-                color:white !important;
-            }
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin: 1px;
+                }
+        }
+
+        .white-style {
+            color:white !important;
+        }
         
     } 
 }
