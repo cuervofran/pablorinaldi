@@ -1,0 +1,783 @@
+@font-face {
+  font-family: Circular Std Medium;
+  src: url(../fonts/CircularStd-Medium.otf);
+}
+
+@font-face {
+  font-family: Circular Std Bold;
+  src: url(../fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: Circular Std Black;
+  src: url(../fonts/CircularStd-Black.otf);
+}
+
+@font-face {
+  font-family: Circular Std Light;
+  src: url(../fonts/CircularStd-Light.otf);
+}
+
+@font-face {
+  font-family: Circular Std Book;
+  src: url(../fonts/CircularStd-Book.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Circular Std Book";
+}
+
+#myBtn {
+  font-weight: 900;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  left: 10px;
+  /* Place the button 20px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #555;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 10px 20px;
+  /* Some padding */
+  border-radius: 0px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #D9281B;
+  /* Add a dark-grey background on hover */
+}
+
+.logo-responsive {
+  display: none;
+}
+
+.header {
+  padding: 1rem;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav-bar ul li {
+  list-style-type: none;
+}
+
+.header .nav-bar ul li #logo-white {
+  color: #ffffff;
+}
+
+.header .nav-bar ul li #logo-white::after {
+  background: #ffffff;
+}
+
+.header .nav-bar ul li a {
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
+  margin: 1rem;
+  font-weight: 600;
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+
+.header .color-red {
+  color: #D9281B;
+}
+
+.nav-item {
+  color: #101010;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  -webkit-transition: -webkit-clip-path .5s;
+  transition: -webkit-clip-path .5s;
+  transition: clip-path .5s;
+  transition: clip-path .5s, -webkit-clip-path .5s;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  background: #101010;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  -webkit-clip-path: var(--clippy);
+          clip-path: var(--clippy);
+  -webkit-transition: -webkit-clip-path .5s;
+  transition: -webkit-clip-path .5s;
+  transition: clip-path .5s;
+  transition: clip-path .5s, -webkit-clip-path .5s;
+}
+
+.nav-item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-portfolio {
+  background-color: #e4e4e4;
+  position: relative;
+  height: 80px;
+}
+
+/* .home {
+    // background-color: rgb(228, 228, 228);;
+    // position:relative;
+    // background: transparent !important;
+} */
+/* .marketing  {
+    color:black;
+    border-bottom:5px solid black ;
+    }
+*/
+.footer {
+  background: transparent;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer .social-links {
+  padding: .3em .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer .social-links a {
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer .social-links img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer .white-style {
+  color: white !important;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img {
+  min-width: 45%;
+}
+
+.img .imagen-principal {
+  width: 100%;
+  height: 99.3vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.texto-bienvenida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.texto-bienvenida .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ddd8d8;
+  width: 70%;
+  height: auto;
+  /*  BUTTONS  */
+}
+
+.texto-bienvenida .text h1 {
+  padding: 3rem 4rem 1rem 2rem;
+  font-size: 3.2rem;
+  color: black;
+  line-height: 0.8em;
+}
+
+.texto-bienvenida .text p {
+  line-height: 1.3em;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 45px;
+}
+
+.texto-bienvenida .text .como-mkt {
+  font-size: 1.8rem;
+}
+
+.texto-bienvenida .text .btn {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: .5rem;
+  justify-self: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-bottom: 5px;
+}
+
+.texto-bienvenida .text .btn a {
+  text-decoration: none;
+}
+
+.texto-bienvenida .text .btn a span {
+  color: #D9281B;
+  font-weight: 600;
+}
+
+.gallery {
+  padding-top: 20px;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 280px;
+  margin-bottom: 40px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.grid-item:hover {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+}
+
+.item1 {
+  width: 280px;
+  height: 320px;
+}
+
+.item2 {
+  width: 280px;
+  height: 180px;
+}
+
+.item3 {
+  width: 280px;
+  height: 190px;
+}
+
+.item4 {
+  width: 280px;
+  height: 340px;
+}
+
+.item5 {
+  width: 280px;
+  height: 280px;
+}
+
+.item6 {
+  width: 280px;
+  height: 190px;
+}
+
+.item7 {
+  width: 280px;
+  height: 330px;
+}
+
+.item8 {
+  width: 280px;
+  height: 200px;
+}
+
+.item9 {
+  width: 280px;
+  height: 180px;
+}
+
+.item10 {
+  width: 280px;
+  height: 320px;
+}
+
+.item11 {
+  width: 280px;
+  height: 370px;
+}
+
+.item12 {
+  width: 280px;
+  height: 180px;
+}
+
+.item13 {
+  width: 280px;
+  height: 400px;
+}
+
+.item14 {
+  width: 280px;
+  height: 180px;
+}
+
+.item15 {
+  width: 280px;
+  height: 360px;
+}
+
+.item16 {
+  width: 280px;
+  height: 340px;
+}
+
+.item17 {
+  width: 280px;
+  height: 370px;
+}
+
+.item18 {
+  width: 280px;
+  height: 190px;
+}
+
+.item19 {
+  width: 280px;
+  height: 380px;
+}
+
+.item20 {
+  width: 280px;
+  height: 175px;
+}
+
+.item21 {
+  width: 280px;
+  height: 400px;
+}
+
+.item22 {
+  width: 280px;
+  height: 200px;
+}
+
+.item23 {
+  width: 280px;
+  height: 350px;
+}
+
+.item24 {
+  width: 280px;
+  height: 400px;
+}
+
+.item25 {
+  width: 280px;
+  height: 180px;
+}
+
+.item26 {
+  width: 280px;
+  height: 400px;
+}
+
+.item27 {
+  width: 280px;
+  height: 380px;
+}
+
+.item28 {
+  width: 280px;
+  height: 190px;
+}
+
+.item29 {
+  width: 280px;
+  height: 340px;
+}
+
+.item30 {
+  width: 280px;
+  height: 400px;
+}
+
+.item31 {
+  width: 280px;
+  height: 360px;
+}
+
+.item32 {
+  width: 280px;
+  height: 360px;
+}
+
+.item33 {
+  width: 280px;
+  height: 400px;
+}
+
+.item34 {
+  width: 280px;
+  height: 350px;
+}
+
+.item35 {
+  width: 280px;
+  height: 400px;
+}
+
+.item36 {
+  width: 280px;
+  height: 330px;
+}
+
+.item37 {
+  width: 280px;
+  height: 360px;
+}
+
+.item38 {
+  width: 280px;
+  height: 180px;
+}
+
+.item39 {
+  width: 280px;
+  height: 380px;
+}
+
+.item40 {
+  width: 280px;
+  height: 340px;
+}
+
+.item41 {
+  width: 280px;
+  height: 320px;
+}
+
+.item42 {
+  width: 280px;
+  height: 330px;
+}
+
+.item43 {
+  width: 280px;
+  height: 180px;
+}
+
+#contact {
+  background-image: url(../images/img-contact.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.color-red {
+  color: #D9281B;
+}
+
+.contact-info {
+  padding-top: 28vh;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20%;
+}
+
+.contact-info p {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.contact-info .vte-lopez {
+  padding-top: 18%;
+}
+
+@media screen and (max-width: 1920px) {
+  .texto-bienvenida .text h1 {
+    padding: 2rem 4rem 0rem 2rem;
+    font-size: 3rem;
+    color: black;
+    line-height: 0.8em;
+  }
+  .texto-bienvenida .text p {
+    line-height: 1.1em;
+    font-size: 1rem;
+    color: black;
+    padding: 1.5rem 2rem 0rem 2rem;
+  }
+  .texto-bienvenida .text .como-mkt {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .texto-bienvenida .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 0.5rem;
+    width: 100vw;
+  }
+  nav-item a {
+    margin: 0;
+  }
+  .header-portfolio {
+    height: 90px;
+    padding: 0;
+  }
+  .home {
+    height: 90%;
+  }
+  .responsive-style::after {
+    background: white;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-responsive {
+    display: block;
+  }
+  .logo-white {
+    width: 60px;
+    height: 60px;
+  }
+  .logo-black {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  .bg-color {
+    background: #ddd8d8;
+  }
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img {
+    min-width: 45%;
+  }
+  .img .imagen-principal {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .white-style {
+    color: white !important;
+  }
+  .responsive-style {
+    color: white !important;
+  }
+  .texto-bienvenida .text {
+    width: 90% h1;
+    width-padding: 1rem 2rem;
+    width-font-size: 3rem;
+    width-color: black;
+    width-line-height: 0.8em;
+  }
+  .texto-bienvenida .text .como-mkt {
+    font-size: 1.8rem;
+  }
+  .texto-bienvenida .text p {
+    margin-top: 1rem;
+    line-height: 1.3em;
+    font-size: 1rem;
+    color: black;
+    padding: 0rem 0rem 0rem 2rem;
+  }
+  #contact {
+    background-image: url(../images/img-contact-responsive.png);
+  }
+  #contact .contact-info {
+    padding-top: 30vh;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo-responsive {
+    display: block;
+  }
+  .logo-responsive img {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  .logo {
+    display: none;
+  }
+  .header {
+    position: absolute;
+    height: 90px;
+  }
+  .header .home-links li a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    margin: 1rem;
+    font-weight: 600;
+    padding-bottom: 1em;
+    cursor: pointer;
+  }
+  .white-style {
+    color: white !important;
+  }
+  .gallery {
+    padding-top: 110px;
+  }
+  .img {
+    width: 100%;
+  }
+  .texto-bienvenida .text {
+    background: #ddd8d8;
+  }
+  .texto-bienvenida .text h1 {
+    font-size: 2.8rem;
+    color: black;
+    line-height: 0.8em;
+  }
+  .texto-bienvenida .text p {
+    line-height: 1.3em;
+    font-size: 1rem;
+    color: black;
+  }
+  .texto-bienvenida .text .como-mkt {
+    font-size: 1.4rem;
+  }
+  #contact .contact-info {
+    font-size: 1.6rem;
+    padding-top: 20vh;
+  }
+  #contact .contact-info .vte-lopez {
+    padding-top: 28vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo-responsive {
+    margin: 0.2em 0;
+  }
+  .texto-bienvenida {
+    max-width: 100%;
+  }
+  .texto-bienvenida .text {
+    padding-top: 20px;
+    background: #ddd8d8;
+    height: 100%;
+    width: 100%;
+  }
+  .texto-bienvenida .text h1 {
+    padding: 1.5rem 1rem;
+    font-size: 2.5rem;
+    color: black;
+    line-height: 0.8em;
+  }
+  .texto-bienvenida .text p {
+    line-height: 1.3em;
+    font-size: 1rem;
+    color: black;
+    padding: 0 1rem;
+  }
+  #myBtn {
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    left: 5px;
+    /* Place the button 20px from the right */
+    padding: 6px 12px;
+    /* Some padding */
+    font-size: 1rem;
+    /* Increase font size */
+  }
+}
+/*# sourceMappingURL=styles.css.map */
