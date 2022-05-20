@@ -10,9 +10,10 @@
     z-index:1;
 
    .footer-container {
-       display: flex;
+       display: none;
+        //display: flex;
        //flex-direction: row;
-       justify-content: right !important;
+       justify-content: right;
     
 
        /* .year-black p {

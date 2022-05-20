@@ -132,8 +132,8 @@
   width: 100%;
   z-index: 1; }
   .footer .footer-container {
-    display: flex;
-    justify-content: right !important;
+    display: none;
+    justify-content: right;
     /* .year-black p {
            display: none;
             color:black;
