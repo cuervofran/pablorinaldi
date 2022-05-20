@@ -1,8 +1,9 @@
+//Mansonry Gallery
 var elem = document.querySelector('.grid');
 var msnry = new Masonry(elem, {
     // options...
     itemSelector: '.grid-item',
-    columnWidth: 230,
+    columnWidth: 280,
     gutter: 15,
     isFitWidth: true
 });

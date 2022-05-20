@@ -1,7 +1,5 @@
 .home {
     display: flex;
-    height: 100vh;
-    // flex-direction: row;
 }
 
 .img {
@@ -14,15 +12,19 @@
 }
 
 .texto-bienvenida {
-    max-width: 55%;
+    // background: rgb(221, 216, 216);
+    // padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: left;
+    // width: 45%;
+    // height: 80%;
 
     .text {
         background: rgb(221, 216, 216);
-        height: 500px;
-        width: 80%;
+        width: 70%;
+        height: auto;
+    
     
         h1 {
             padding: 3rem 4rem 1rem 2rem;
@@ -35,7 +37,7 @@
             line-height: 1.3em;
             font-size: 1rem;
             color: black;
-            padding: 1rem 2rem 0rem 2rem;
+            margin-bottom:50px;
         }
     
         .como-mkt {

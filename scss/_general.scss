@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: "Circular Std Book";
+}
+
 @font-face {
     font-family: Circular Std Medium ;
     src: url(../fonts/CircularStd-Medium.otf), 
@@ -19,20 +26,12 @@
     src: url(../fonts/CircularStd-Book.otf), 
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    font-family: "Circular Std Book";
-}
-
-
 #myBtn {
     font-weight: 900;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    left: 30px; /* Place the button 30px from the right */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    left: 10px; /* Place the button 20px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -40,8 +39,8 @@
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px 20px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 20px; /* Increase font size */
+    border-radius: 0px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
   }
   
   #myBtn:hover {
