@@ -133,7 +133,7 @@
   z-index: 1; }
   .footer .footer-container {
     display: flex;
-    justify-content: right;
+    justify-content: right !important;
     /* .year-black p {
            display: none;
             color:black;
@@ -154,6 +154,7 @@
     .footer .footer-container .social-links {
       padding: 0 .5em;
       display: flex;
+      flex-direction: column;
       justify-content: center; }
       .footer .footer-container .social-links a {
         color: black;
@@ -167,9 +168,10 @@
     .footer .footer-container .white-style {
       color: white !important; }
 
-.footer-contact {
-  bottom: 0vh; }
-
+/* .footer-contact {
+    bottom: 0vh; 
+}
+ */
 .home {
   display: flex; }
 
