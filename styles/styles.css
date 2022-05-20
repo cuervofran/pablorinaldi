@@ -131,47 +131,23 @@
   bottom: 0;
   width: 100%;
   z-index: 1; }
-  .footer .footer-container {
-    display: none;
-    justify-content: right;
-    /* .year-black p {
-           display: none;
-            color:black;
-            font-size: 4rem;
-            font-weight: bolder;
-            padding: 0 0 0 1rem;
-            line-height: 0.8em;
-       }
+  .footer .social-links {
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .footer .social-links a {
+      color: black;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer; }
+    .footer .social-links img {
+      height: 30px;
+      width: 30px; }
+  .footer .white-style {
+    color: white !important; }
 
-        .year p {
-            display:none;
-            font-size: 4rem;
-            color: white;
-            font-weight: bolder;
-            padding: 0 0 0 1rem;
-            line-height: 0.8em;
-        } */ }
-    .footer .footer-container .social-links {
-      padding: 0 .5em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .footer .footer-container .social-links a {
-        color: black;
-        font-size: 1.1rem;
-        text-decoration: none;
-        font-weight: 600;
-        cursor: pointer; }
-      .footer .footer-container .social-links img {
-        height: 30px;
-        width: 30px; }
-    .footer .footer-container .white-style {
-      color: white !important; }
-
-/* .footer-contact {
-    bottom: 0vh; 
-}
- */
 .home {
   display: flex; }
 
@@ -554,20 +530,7 @@
     font-size: 1.6rem;
     padding-top: 20vh; }
     #contact .contact-info .vte-lopez {
-      padding-top: 28vh; }
-  /* .footer {
-       .footer-container {
-           .year-black p {
-                font-size: 3rem;
-                padding: 0;
-           }
-    
-            .year p {
-                font-size: 3rem;
-                padding: 0;
-            }
-        } 
-    } */ }
+      padding-top: 28vh; } }
 
 @media screen and (max-width: 400px) {
   .logo-responsive {
