@@ -181,22 +181,22 @@
       margin-bottom: 45px; }
     .texto-bienvenida .text .como-mkt {
       font-size: 1.8rem; }
-    .texto-bienvenida .text .btn {
-      width: 100%;
-      height: 2.5rem;
-      border-radius: .5rem;
-      justify-self: left;
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      cursor: pointer;
-      transition: .3s ease;
-      margin-bottom: 5px; }
-      .texto-bienvenida .text .btn a {
-        text-decoration: none; }
-        .texto-bienvenida .text .btn a span {
-          color: #D9281B;
-          font-weight: 600; }
+    .texto-bienvenida .text a {
+      text-decoration: none; }
+      .texto-bienvenida .text a span {
+        color: #D9281B;
+        font-weight: 600; }
+      .texto-bienvenida .text a .btn {
+        width: 100%;
+        height: 2.5rem;
+        border-radius: .5rem;
+        justify-self: left;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        cursor: pointer;
+        transition: .3s ease;
+        margin-bottom: 5px; }
 
 .gallery {
   padding-top: 20px; }
