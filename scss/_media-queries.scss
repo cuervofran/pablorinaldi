@@ -72,6 +72,7 @@
 
     .header-portfolio {
         height: 90px;
+        padding:0;
     }
 
     .home{
@@ -188,8 +189,8 @@
 
     .header {
         position: absolute;
-        padding:0.5rem 0;
-        height: 100px;
+        // padding:0.5rem 0;
+        height: 90px;
     
         .home-links li a  {
             color: #ffffff;
@@ -255,11 +256,8 @@
         }
     }
 
-    .footer {
-        // padding: 1rem;
-
+    /* .footer {
        .footer-container {
-        
            .year-black p {
                 font-size: 3rem;
                 padding: 0;
@@ -270,7 +268,7 @@
                 padding: 0;
             }
         } 
-    }
+    } */
 }
 
 

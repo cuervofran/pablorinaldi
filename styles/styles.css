@@ -133,26 +133,29 @@
   z-index: 1; }
   .footer .footer-container {
     display: flex;
-    justify-content: right; }
-    .footer .footer-container .year-black p {
-      display: none;
-      color: black;
-      font-size: 4rem;
-      font-weight: bolder;
-      padding: 0 0 0 1rem;
-      line-height: 0.8em; }
-    .footer .footer-container .year p {
-      display: none;
-      font-size: 4rem;
-      color: white;
-      font-weight: bolder;
-      padding: 0 0 0 1rem;
-      line-height: 0.8em; }
+    justify-content: right;
+    /* .year-black p {
+           display: none;
+            color:black;
+            font-size: 4rem;
+            font-weight: bolder;
+            padding: 0 0 0 1rem;
+            line-height: 0.8em;
+       }
+
+        .year p {
+            display:none;
+            font-size: 4rem;
+            color: white;
+            font-weight: bolder;
+            padding: 0 0 0 1rem;
+            line-height: 0.8em;
+        } */ }
     .footer .footer-container .social-links {
+      padding: 0 .5em;
       display: flex;
       flex-direction: column;
-      padding: 0 .5em;
-      justify-content: right; }
+      justify-content: center; }
       .footer .footer-container .social-links a {
         color: black;
         font-size: 1.1rem;
@@ -161,8 +164,7 @@
         cursor: pointer; }
       .footer .footer-container .social-links img {
         height: 30px;
-        width: 30px;
-        margin: 1px; }
+        width: 30px; }
     .footer .footer-container .white-style {
       color: white !important; }
 
@@ -456,7 +458,8 @@
   nav-item a {
     margin: 0; }
   .header-portfolio {
-    height: 90px; }
+    height: 90px;
+    padding: 0; }
   .home {
     height: 90%; }
   .responsive-style::after {
@@ -518,8 +521,7 @@
     display: none; }
   .header {
     position: absolute;
-    padding: 0.5rem 0;
-    height: 100px; }
+    height: 90px; }
     .header .home-links li a {
       color: #ffffff;
       font-size: 1.4rem;
@@ -552,12 +554,19 @@
     padding-top: 20vh; }
     #contact .contact-info .vte-lopez {
       padding-top: 28vh; }
-  .footer .footer-container .year-black p {
-    font-size: 3rem;
-    padding: 0; }
-  .footer .footer-container .year p {
-    font-size: 3rem;
-    padding: 0; } }
+  /* .footer {
+       .footer-container {
+           .year-black p {
+                font-size: 3rem;
+                padding: 0;
+           }
+    
+            .year p {
+                font-size: 3rem;
+                padding: 0;
+            }
+        } 
+    } */ }
 
 @media screen and (max-width: 400px) {
   .logo-responsive {
